@@ -48,7 +48,6 @@ namespace Module5Lecture2
             Console.WriteLine($"Average: {intrusions.Sum() / (double) intrusions.Length}");
             Console.WriteLine();
 
-
             /*
              * To get Min/max we sort both arrays first
              * Then getting first and last items where first is min and last is max
@@ -73,7 +72,7 @@ namespace Module5Lecture2
             colors.Add("aquamarine");
             colors.Add("green");
             colors.Remove("green");
-   
+
             foreach (var color in colors)
             {
                 Console.WriteLine(color);
@@ -93,14 +92,11 @@ namespace Module5Lecture2
             {
                 Console.WriteLine(color);
             }
-            
-
         }
 
 
         static void DictionaryTryItOut()
         {
-
             Console.WriteLine("Enter word:");
             string phrase = Console.ReadLine();
 
@@ -108,7 +104,7 @@ namespace Module5Lecture2
 
             foreach (char letter in phrase)
             {
-                if (!letters.ContainsKey(letter)) 
+                if (!letters.ContainsKey(letter))
                     letters.Add(letter, 1);
                 else letters[letter]++;
             }
@@ -117,17 +113,14 @@ namespace Module5Lecture2
             {
                 Console.WriteLine($"{record.Key} occured {record.Value} times");
             }
-
         }
-        
+
         static void Dictionary()
         {
             var grades = new Dictionary<string, int>();
             grades["Mario"] = 100;
-            
-            
         }
-        
+
         static void Main(string[] args)
         {
             //IntrusionReport();

@@ -72,17 +72,11 @@ namespace Module5Lecture2
 
             colors.Add("aquamarine");
             colors.Add("green");
-
             colors.Remove("green");
    
             foreach (var color in colors)
             {
                 Console.WriteLine(color);
-            }
-
-            for (int i = 0; i < colors.Count; i++)
-            {
-
             }
 
             Console.WriteLine("Which color would you like to remove?");
@@ -114,14 +108,9 @@ namespace Module5Lecture2
 
             foreach (char letter in phrase)
             {
-                if (!letters.ContainsKey(letter))
-                {
+                if (!letters.ContainsKey(letter)) 
                     letters.Add(letter, 1);
-                }
-                else
-                {
-                    letters[letter]++;
-                }
+                else letters[letter]++;
             }
 
             foreach (var record in letters)

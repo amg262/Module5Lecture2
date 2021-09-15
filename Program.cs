@@ -63,7 +63,7 @@ namespace Module5Lecture2
             Console.WriteLine($"{days[0]} had the least: {intrusions[0]}");
         }
 
-        static void List()
+        static void ListColors()
         {
             var colors = new List<string>()
             {
@@ -104,11 +104,47 @@ namespace Module5Lecture2
         }
 
 
+        static void DictionaryTryItOut()
+        {
+
+            Console.WriteLine("Enter word:");
+            string phrase = Console.ReadLine();
+
+            var letters = new Dictionary<char, int>();
+
+            foreach (char letter in phrase)
+            {
+                if (!letters.ContainsKey(letter))
+                {
+                    letters.Add(letter, 1);
+                }
+                else
+                {
+                    letters[letter]++;
+                }
+            }
+
+            foreach (var record in letters)
+            {
+                Console.WriteLine($"{record.Key} occured {record.Value} times");
+            }
+
+        }
+        
+        static void Dictionary()
+        {
+            var grades = new Dictionary<string, int>();
+            grades["Mario"] = 100;
+            
+            
+        }
+        
         static void Main(string[] args)
         {
             //IntrusionReport();
             //TwoDemArray();
-            List();
+            //ListColors();
+            DictionaryTryItOut();
         }
     }
 }

@@ -122,3 +122,20 @@ static void TwoDemArray()
     }
 }
 ```
+
+## Queue ###
+```c#
+static void Queue()
+{
+    char[] typing = {'a', 'b', 'c', 'd', 'e'};
+    var keystrokes = new Queue<char>(typing);
+
+    while (keystrokes.Count > 0)
+        Console.Write(keystrokes.Dequeue());
+
+    var stackKeyStrokes = new Stack<char>(typing);
+
+    while (stackKeyStrokes.Count > 0)
+        Console.WriteLine(stackKeyStrokes.Pop());
+}
+```

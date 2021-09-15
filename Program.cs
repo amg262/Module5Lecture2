@@ -121,12 +121,42 @@ namespace Module5Lecture2
             grades["Mario"] = 100;
         }
 
+
+        static void Queue()
+        {
+            char[] typing = {'a', 'b', 'c', 'd', 'e'};
+            var keystrokes = new Queue<char>(typing);
+
+            while (keystrokes.Count > 0)
+                Console.Write(keystrokes.Dequeue());
+
+            var stackKeyStrokes = new Stack<char>(typing);
+
+            while (stackKeyStrokes.Count > 0)
+                Console.WriteLine(stackKeyStrokes.Pop());
+        }
+
+        static void Stack()
+        {
+            var paper = new Stack<string>();
+            paper.Push("blue");
+            paper.Push("green");
+            paper.Push("purple");
+            paper.Push("black");
+
+            while (paper.Count > 0)
+                Console.WriteLine($"A {paper.Pop()} sheet");
+
+            Console.WriteLine($"{paper.Count} pieces of paper left");
+        }
+
         static void Main(string[] args)
         {
             //IntrusionReport();
             //TwoDemArray();
             //ListColors();
-            DictionaryTryItOut();
+            //DictionaryTryItOut();
+            Stack();
         }
     }
 }

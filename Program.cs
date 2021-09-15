@@ -6,6 +6,9 @@ namespace Module5Lecture2
 {
     class Program
     {
+        
+        
+        
         static void IntrusionReport()
         {
             string[] days = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};

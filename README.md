@@ -121,8 +121,25 @@ static void TwoDemArray()
         Console.WriteLine($"{grades[row, 0]} . {grades[row, 1]}");
     }
 }
-```
 
+
+
+```
+```c#
+static void Stack()
+{
+    var paper = new Stack<string>();
+    paper.Push("blue");
+    paper.Push("green");
+    paper.Push("purple");
+    paper.Push("black");
+
+    while (paper.Count > 0)
+        Console.WriteLine($"A {paper.Pop()} sheet");
+
+    Console.WriteLine($"{paper.Count} pieces of paper left");
+}
+```
 ## Queue ###
 ```c#
 static void Queue()
